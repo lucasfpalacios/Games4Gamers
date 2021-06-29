@@ -45,6 +45,22 @@ body {
 }
 
 /*Encabezado de la pagina*/
+#barra ul{
+	list-style-type: none;	
+	
+}
+  
+#barra li {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+#barra li a {
+	color: cornsilk;
+	font-size: 30px;
+	text-decoration: none;
+}
+
 .encabezado__titulo{
 	padding: 2em;
 	color: dodgerblue;
@@ -55,6 +71,20 @@ body {
 	text-shadow: 5px 5px 5px black;
 	margin-bottom: 50px;
 }
+h1 {
+	animation-duration: 4s;
+	animation-name: aparecer;
+	animation-iteration-count: initial;
+ }
+ @keyframes aparecer {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+ }
+ 
 
 .descripcion{
 	color: black;
@@ -182,7 +212,9 @@ body {
 	text-align: center;
 	line-height: 10rem;
 }
-
+.socalo {
+	background-color: rgb(228, 227, 227) ;
+}
 
 
 
@@ -198,43 +230,8 @@ body {
 	)
 }
 
-#barra ul{
-	list-style-type: none;	
-	
-}
-  
-#barra li {
-	display: inline-block;
-	padding: 0 10px;
-}
 
-#barra li a {
-	color: cornsilk;
-	font-size: 30px;
-	text-decoration: none;
-}
 
-#footer {
-	min-height: 400px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	background-color: #00439c;
-	margin-top: 300px;
-
-}
-#footer .PdePag {
-	display: inline-block;
-	padding: 10px 10px 10px;
-}
-#footer .titulo__footer {
-	color: cornsilk;
-	font-size: 30px;	
-}
-#footer .parrafo {
-	color: cornsilk;
-	font-size: 20px;
-}
 
 .redes img {
 	display: flex;
@@ -269,13 +266,60 @@ body {
 	display: flex;
 	flex-direction: row;
 }
-
+img {
+	animation-duration: 4s;
+	animation-name: aparecer;
+	animation-iteration-count: initial;
+ }
+ @keyframes aparecer {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+ }
+ table {
+	animation-duration: 4s;
+	animation-name: aparecer;
+	animation-iteration-count: initial;
+ }
+ @keyframes aparecer {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+ }
 
 .contenido__noticia1 {
 	float: right;
 }
 .titulo__noticia1 {
 	color: wheat;
+}
+
+#footer {
+	min-height: 400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #00439c;
+	margin-top: 300px;
+
+}
+#footer .PdePag {
+	display: inline-block;
+	padding: 10px 10px 10px;
+}
+#footer .titulo__footer {
+	color: cornsilk;
+	font-size: 30px;	
+}
+#footer .parrafo {
+	color: cornsilk;
+	font-size: 20px;
 }
 
 
