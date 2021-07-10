@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Games4Gamers</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<style>
+		.carousel-inner > .item > img {
+			width: 80%;
+			margin: auto;
+		}
+	</style>
+  
 </head>
 <body class="fondo__index"> 
 <!--Inicio de barra de menu-->
 	<header>
-		<nav id="barra" class="encabezado">
-			<div class="botonera typeR">
-				<ul>
-				<li><a class="encabezado__menu--link" href="index.html">Home
-				</a></li>
-				<li><a class="encabezado__menu--link" href="secciones/consolas.html">
-				Consolas</a></li>
-				<li><a class="encabezado__menu--link" href="secciones/juegos.html">
-				Juegos
-				</a></li>						
-				<li><a class="encabezado__menu--link" href="secciones/categorias.html">
-				Categorías
-				</a></li>
-				<li><a class="encabezado__menu--link" href="secciones/noticias.html">Noticias
-				</a></li>
-				</ul>
+		<nav class="navbar navbar-default">
+			<div class="container">
+			  <div class="navbar-header">
+			  <a class="navbar-brand" href="#">Games 4 Gamers</a>
+			  </div>
+			  <ul class="nav navbar-nav">	  
+				<li class="active"><a href="#">Inicio</a></li>		  
+				<li><a href="secciones/consolas.html">Consolas</a></li>
+				<li><a href="secciones/juegos.html">Juegos</a></li>
+				<li><a href="secciones/categorias.html">Categorias</a></li>
+				<li><a href="secciones/noticias.html">Noticias</a></li>
+			  </ul>
+			  
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-star-empty"></span> Ingresar</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-search"></span> Buscar</a></li>
+			  </ul>
+			  
 			</div>
-		</nav>		
+		  </nav>		
 <!--fin de barra de menu-->
 <!--encabezado de mi sitio-->
 		<div>
@@ -43,8 +55,30 @@
 		</p>
 <!--cierre de contenido principal-->
 <!--Inicio carrusel-->
-		<section class="carruselIndex">
-			<img src="imagenes/Juegos.jpg" alt="Juegos">
+		<section class="container">
+			<div>
+				<div id="carousel" class="carousel slide" data-ride="carousel">
+						
+					<!-- Carousel Indicators -->
+					<ol class="carousel-indicators">
+					<li data-target="#carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel" data-slide-to="1" ></li>
+					</ol>
+					<!-- Wrapper for Slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="imagenes/Rachet and clank.jpg">
+							<div class="carousel-caption">
+							</div>
+						</div>
+						<div class="item">
+							<img src="imagenes/HorizonForbidenWest.jpg">
+							<div class="carousel-caption">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
 <!--Fin de Carrusel-->

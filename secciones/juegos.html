@@ -5,34 +5,34 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Juegos</title>
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body class="fondo__juegos">
 <!--Inicio de barra de menu-->
 	<header>
-		<nav id="barra" class="encabezado">
-			<div class="botonera typeR">
-				<ul>
-					<li><a class="encabezado__menu--link" href="../index.html">Home
-					</a>
-					</li>
-					<li><a class="encabezado__menu--link" href="consolas.html">
-					Consolas</a>
-					</li>
-					<li><a class="encabezado__menu--link" href="juegos.html">
-					Juegos
-					</a>
-					</li>
-					<li><a class="encabezado__menu--link" href="categorias.html">
-					Categorías
-					</a>
-					</li>
-					<li><a class="encabezado__menu--link" href="noticias.html">
-					Noticias
-					</a>
-					</li>
-				</ul>
+		<nav class="navbar navbar-default">
+			<div class="container">
+			  <div class="navbar-header">
+			  <a class="navbar-brand" href="#">Games 4 Gamers</a>
+			  </div>
+			  <ul class="nav navbar-nav">	  
+				<li class="active"><a href="#">Inicio</a></li>		  
+				<li><a href="../secciones/consolas.html">Consolas</a></li>
+				<li><a href="../secciones/juegos.html">Juegos</a></li>
+				<li><a href="../secciones/categorias.html">Categorias</a></li>
+				<li><a href="../secciones/categorias.html">Noticias</a></li>
+			  </ul>
+			  
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-star-empty"></span> Ingresar</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-search"></span> Buscar</a></li>
+			  </ul>
+			  
 			</div>
-		</nav>
+		  </nav>		
 <!--fin de barra de menu-->
 <!--Inicio de encabezado-->
 		<h1 class="encabezado__titulo">Juegos</h1>
@@ -42,9 +42,8 @@
 		</p>
 <!--Fin de encabezado-->
 <!--Inicio tabla de Juegos-->
-	<main>
-		
-			<section class="contenedor">
+	<main>		
+			<section class="contenedor wow animate__bounceIn">
 				<div class="contenedor__cards">
 					<div class="card">
 						<a href="#" class="card__thumbnail">
@@ -407,5 +406,9 @@
 		</div>
 	</footer>	
 <!--Fin de pie de pagina-->
+<script src="../js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 </body>
 </html>
