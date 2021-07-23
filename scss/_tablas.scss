@@ -1,0 +1,33 @@
+.tabla{
+	margin-bottom: 10%;
+	.tabla__subtitulos{
+		color: orangered;
+		font-family: 'Bungee Inline', cursive;
+		font-size: xx-large;
+		text-align: center;
+		text-shadow: 5px 5px 5px black;
+		margin-bottom: 50px;	
+	}
+}
+
+.tabla__descripcion{
+	color: black;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: large;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+table {
+	animation-duration: 4s;
+	animation-name: aparecer;
+	animation-iteration-count: initial;
+}
+ @keyframes aparecer {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+ }

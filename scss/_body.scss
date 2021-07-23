@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	display: grid;
+	background-color: floralwhite;
+}
+
+.carruselIndex {
+	display: grid;
+	transform: translate(350px) scale(2,1);
+	margin-bottom: 100px;
+}
+
+.descripcion{
+	color: black;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: large;
+	text-align: center;
+	margin-bottom: 100px;
+}
