@@ -1,0 +1,40 @@
+.contenedor__noticias {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-areas: 
+	"noticia1 noticia1"
+	"noticia2 noticia2"
+	"noticia3 noticia3";
+	.noticia1 {
+		grid-area: noticia1;
+		display: flex;
+		flex-direction: row;
+	}
+	.noticia2 {
+		grid-area: noticia2;
+		display: flex;
+		flex-direction: row;
+	}
+	.noticia3 {
+		grid-area: noticia3;
+		display: flex;
+		flex-direction: row;
+	}
+	
+}
+
+
+
+img {
+	animation-duration: 4s;
+	animation-name: aparecer;
+	animation-iteration-count: initial;
+ }
+ @keyframes aparecer {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+ }

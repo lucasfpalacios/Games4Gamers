@@ -1,0 +1,27 @@
+#footer {
+	min-height: 400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #00439c;
+	margin-top: 300px;
+	.PdePag {
+		display: inline-block;
+		padding: 10px 10px 10px;
+		.titulo__footer {
+			color: cornsilk;
+			font-size: 30px;
+		}
+		.parrafo {
+			color: cornsilk;
+			font-size: 20px;
+		}
+	}
+}
+
+
+
+
+
+
+
