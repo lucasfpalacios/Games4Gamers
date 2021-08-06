@@ -1,6 +1,20 @@
 $social: (
-    twitter:lightblue,
-    instagram:pink,
-    youtube:red,
-    mail:black,
+    twitter: lightblue,
+    instagram: pink,
+    youtube: red,
+    mail: black,
 );
+
+.instagram {
+    color: map-get($social, instagram);
+};
+.twitter {
+    color: map-get($social, twitter);
+};
+.youtube {
+    color: map-get($social, youtube);
+ };
+
+.mail {
+    color: map-get($social, mail);
+ }

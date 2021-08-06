@@ -110,11 +110,6 @@
   color: cornsilk;
   font-size: 20px;
 }
-#footer .PdePag .redes img {
-  display: flex;
-  flex-direction: column;
-  max-width: 40px;
-}
 
 .contenedor__noticias {
   display: grid;
@@ -152,6 +147,11 @@ img {
   }
 }
 .consolas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
   margin: auto;
 }
 
@@ -286,6 +286,51 @@ body {
   font-size: large;
   text-align: center;
   margin-bottom: 100px;
+}
+
+nav {
+  text-align: center;
+  background-color: dodgerblue;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  display: inline-block;
+  background-color: floralwhite;
+  padding: 10px 10px 10px 10px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px black;
+  font-family: "Permanent Marker", cursive;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.instagram {
+  color: pink;
+}
+
+.twitter {
+  color: lightblue;
+}
+
+.youtube {
+  color: red;
+}
+
+.mail {
+  color: black;
+}
+
+.carousel-inner {
+  width: 1000px;
+}
+.carousel-inner img {
+  width: 2000px;
 }
 
 /*# sourceMappingURL=style.css.map */
