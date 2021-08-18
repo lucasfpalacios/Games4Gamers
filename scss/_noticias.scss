@@ -23,8 +23,6 @@
 	
 }
 
-
-
 img {
 	animation-duration: 4s;
 	animation-name: aparecer;
@@ -38,3 +36,13 @@ img {
 	  opacity: 1;
 	}
  }
+.socalo {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		font-family: 'Freckle Face', cursive;
+		font-size: xx-large;
+		text-align: center;
+		color: white;
+		margin-bottom: 50px;
+}

@@ -6,8 +6,11 @@
 
 
 body {
+	background: url(../imagenes/Background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	display: grid;
-	background-color: floralwhite;
 }
 
 .carruselIndex {
@@ -17,7 +20,7 @@ body {
 }
 
 .descripcion{
-	color: black;
+	color: whitesmoke;
 	font-family: 'Times New Roman', Times, serif;
 	font-size: large;
 	text-align: center;

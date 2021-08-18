@@ -27,7 +27,7 @@
 
 .encabezado__titulo {
   padding: 2em;
-  color: dodgerblue;
+  color: wheat;
   font-family: "Press Start 2P", cursive;
   font-size: xx-large;
   font-weight: 400;
@@ -94,23 +94,96 @@
   min-height: 400px;
   display: flex;
   flex-direction: row;
+  font-size: small;
   justify-content: center;
   justify-content: space-between;
-  background-color: #00439c;
-  margin-top: 300px;
+  background-color: #e3f2fd;
+  margin-top: 100px;
 }
 #footer .PdePag {
   display: flex;
   display: inline-block;
   padding: 10px 10px 10px;
-  margin-top: 100px;
+}
+#footer .PdePag .nosotros {
+  color: black;
+  margin-bottom: 30px;
+  text-decoration: none;
 }
 #footer .PdePag .titulo__footer {
-  color: cornsilk;
-  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-right: 200px;
 }
-#footer .PdePag .parrafo {
-  color: cornsilk;
+
+.parrafo {
+  color: black;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.localizacion {
+  color: black;
+  font-size: medium;
+  margin-top: 150px;
+}
+
+.redes img {
+  display: flex;
+  flex-direction: column;
+  max-width: 50px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.redes .instagram {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.redes .instagram p {
+  margin-left: 10px;
+  color: black;
+  font-size: 20px;
+}
+.redes .youtube {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.redes .youtube p {
+  margin-left: 10px;
+  color: black;
+  font-size: 20px;
+}
+.redes .twitter {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.redes .twitter p {
+  margin-left: 10px;
+  color: black;
+  font-size: 20px;
+}
+.redes .mail {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.redes .mail p {
+  margin-left: 10px;
+  color: black;
   font-size: 20px;
 }
 
@@ -149,6 +222,17 @@ img {
     opacity: 1;
   }
 }
+.socalo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Freckle Face", cursive;
+  font-size: xx-large;
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+
 .consolas {
   display: flex;
   flex-direction: row;
@@ -160,15 +244,13 @@ img {
 
 .consolas__titulo {
   font-family: "Freckle Face", cursive;
+  font-style: italic;
+  text-decoration: underline;
   font-weight: 300;
   font-size: xx-large;
-  color: black;
+  color: bisque;
   text-align: center;
   line-height: 10rem;
-}
-
-.socalo {
-  background-color: #e4e3e3;
 }
 
 .content {
@@ -186,40 +268,46 @@ img {
   background-color: #cbddf0;
 }
 
-.tabla {
-  margin-bottom: 10%;
-}
-.tabla .tabla__subtitulos {
-  color: orangered;
-  font-family: "Bungee Inline", cursive;
-  font-size: xx-large;
-  text-align: center;
-  text-shadow: 5px 5px 5px black;
-  margin-bottom: 50px;
+.contentcat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.tabla__descripcion {
-  color: black;
-  font-family: "Times New Roman", Times, serif;
-  font-size: large;
-  text-align: center;
-  margin-bottom: 100px;
+/*.tabla{
+	margin-bottom: 10%;
+	.tabla__subtitulos{
+		color: orangered;
+		font-family: 'Bungee Inline', cursive;
+		font-size: xx-large;
+		text-align: center;
+		text-shadow: 5px 5px 5px black;
+		margin-bottom: 50px;	
+	}
+}
+
+.tabla__descripcion{
+	color: black;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: large;
+	text-align: center;
+	margin-bottom: 100px;
 }
 
 table {
-  animation-duration: 4s;
-  animation-name: aparecer;
-  animation-iteration-count: initial;
+	animation-duration: 4s;
+	animation-name: aparecer;
+	animation-iteration-count: initial;
 }
-
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+ @keyframes aparecer {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+ }*/
 * {
   margin: 0;
   padding: 0;
@@ -227,8 +315,11 @@ table {
 }
 
 body {
+  background: url(../imagenes/Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: grid;
-  background-color: floralwhite;
 }
 
 .carruselIndex {
@@ -238,7 +329,7 @@ body {
 }
 
 .descripcion {
-  color: black;
+  color: whitesmoke;
   font-family: "Times New Roman", Times, serif;
   font-size: large;
   text-align: center;
@@ -267,22 +358,26 @@ nav ul li {
   margin-right: 50px;
 }
 
+/*$social: (
+    twitter: lightblue,
+    instagram: pink,
+    youtube: red,
+    mail: black,
+);
+
 .instagram {
-  color: pink;
-}
-
+    color: map-get($social, instagram);
+};
 .twitter {
-  color: lightblue;
-}
-
+    color: map-get($social, twitter);
+};
 .youtube {
-  color: red;
-}
+    color: map-get($social, youtube);
+ };
 
 .mail {
-  color: black;
-}
-
+    color: map-get($social, mail);
+ }*/
 .carousel-inner {
   width: 1000px;
 }

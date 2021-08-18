@@ -2,29 +2,100 @@
 	min-height: 400px;
 	display: flex;
 	flex-direction: row;
+	font-size: small;
 	justify-content: center;
 	justify-content: space-between;	
-	background-color: #00439c;
-	margin-top: 300px;
+	background-color: #e3f2fd;
+	margin-top: 100px;
 	.PdePag {
 		display: flex;
 		display: inline-block;
 		padding: 10px 10px 10px;
-		margin-top: 100px;
-		.titulo__footer {
-			color: cornsilk;
-			font-size: 30px;
+		.nosotros {
+			color: black;
+			margin-bottom: 30px;
+			text-decoration: none;
 		}
-		.parrafo {
-			color: cornsilk;
+		.titulo__footer {
+			color: black;
+			font-weight: bold;
+			font-style: italic;	
+			font-size: 20px;	
+			margin-bottom: 20px;	
+			margin-right: 200px;
+			}
+		}
+	}
+
+
+.parrafo {
+	color: black;
+	font-size: 20px;
+	font-style: italic;
+}
+.localizacion {
+	color: black;
+	font-size: medium;
+	margin-top: 150px;
+	
+}
+
+.redes img {
+	display: flex;
+	flex-direction: column;
+	max-width: 50px;
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+}
+
+.redes {
+	.instagram {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 30px;
+		text-decoration: none;
+		p {
+			margin-left: 10px;
+			color: black;
+			font-size: 20px;
+		}
+	}
+	.youtube{
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 30px;
+		text-decoration: none;
+		p {
+			margin-left: 10px;
+			color: black;
+			font-size: 20px;
+		}
+	}
+	.twitter {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 30px;
+		text-decoration: none;
+		p {
+			margin-left: 10px;
+			color: black;
+			font-size: 20px;
+		}
+	}
+	.mail {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 30px;
+		text-decoration: none;
+		p {
+			margin-left: 10px;
+			color: black;
 			font-size: 20px;
 		}
 	}
 }
-
-
-
-
-
 
 
