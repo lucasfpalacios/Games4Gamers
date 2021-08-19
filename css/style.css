@@ -93,6 +93,7 @@
 #footer {
   min-height: 400px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   font-size: small;
   justify-content: center;
@@ -101,6 +102,7 @@
   margin-top: 100px;
 }
 #footer .PdePag {
+  width: 100%;
   display: flex;
   display: inline-block;
   padding: 10px 10px 10px;
@@ -358,6 +360,28 @@ nav ul li {
   margin-right: 50px;
 }
 
+/*
+@media screen and (min-width: 320px) {
+	.PdePag {
+		width: 33%;
+
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.PdePag {
+		width: 33%;
+
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.PdePag {
+		width: 33%;
+
+	}
+}
+*/
 /*$social: (
     twitter: lightblue,
     instagram: pink,

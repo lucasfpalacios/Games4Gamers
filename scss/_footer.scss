@@ -1,6 +1,7 @@
 #footer {
 	min-height: 400px;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	font-size: small;
 	justify-content: center;
@@ -8,6 +9,7 @@
 	background-color: #e3f2fd;
 	margin-top: 100px;
 	.PdePag {
+		width: 100%;
 		display: flex;
 		display: inline-block;
 		padding: 10px 10px 10px;
