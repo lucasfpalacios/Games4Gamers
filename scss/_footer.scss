@@ -9,14 +9,16 @@
 	background-color: #e3f2fd;
 	margin-top: 100px;
 	.PdePag {
-		width: 100%;
 		display: flex;
 		display: inline-block;
 		padding: 10px 10px 10px;
 		.nosotros {
+			a {
 			color: black;
 			margin-bottom: 30px;
 			text-decoration: none;
+			font-size: 15px;
+			}
 		}
 		.titulo__footer {
 			color: black;
@@ -26,8 +28,8 @@
 			margin-bottom: 20px;	
 			margin-right: 200px;
 			}
-		}
 	}
+}
 
 
 .parrafo {
@@ -97,7 +99,21 @@
 			color: black;
 			font-size: 20px;
 		}
+		
+	}
+	.linkedin {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 30px;
+		text-decoration: none;
+		p {
+			margin-left: 10px;
+			color: black;
+			font-size: 20px;
+		}
+		
 	}
 }
+
 
 

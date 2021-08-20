@@ -102,15 +102,15 @@
   margin-top: 100px;
 }
 #footer .PdePag {
-  width: 100%;
   display: flex;
   display: inline-block;
   padding: 10px 10px 10px;
 }
-#footer .PdePag .nosotros {
+#footer .PdePag .nosotros a {
   color: black;
   margin-bottom: 30px;
   text-decoration: none;
+  font-size: 15px;
 }
 #footer .PdePag .titulo__footer {
   color: black;
@@ -188,51 +188,62 @@
   color: black;
   font-size: 20px;
 }
-
-.contenedor__noticias {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: "noticia1 noticia1" "noticia2 noticia2" "noticia3 noticia3";
-}
-.contenedor__noticias .noticia1 {
-  grid-area: noticia1;
+.redes .linkedin {
   display: flex;
   flex-direction: row;
+  margin-bottom: 30px;
+  text-decoration: none;
 }
-.contenedor__noticias .noticia2 {
-  grid-area: noticia2;
-  display: flex;
-  flex-direction: row;
-}
-.contenedor__noticias .noticia3 {
-  grid-area: noticia3;
-  display: flex;
-  flex-direction: row;
+.redes .linkedin p {
+  margin-left: 10px;
+  color: black;
+  font-size: 20px;
 }
 
-img {
-  animation-duration: 4s;
-  animation-name: aparecer;
-  animation-iteration-count: initial;
-}
-
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.socalo {
+.video {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 30px;
+  border: 3px solid black;
+  height: 0px;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.video iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.contenedor-video {
+  width: 40%;
+  margin: auto;
+}
+
+.texto {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.texto h2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  color: burlywood;
+  text-decoration: underline;
   font-family: "Freckle Face", cursive;
-  font-size: xx-large;
+}
+.texto p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
   color: white;
-  margin-bottom: 50px;
+  font-style: italic;
 }
 
 .consolas {
@@ -264,52 +275,30 @@ img {
 
 .contenedor {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 50px;
+  border: solid white;
 }
 .contenedor .card {
-  background-color: #cbddf0;
+  background-color: transparent;
+  color: white;
 }
 
 .contentcat {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.contentcat .card {
+  background-color: transparent;
+  color: white;
+  border: solid white;
+  width: 100%;
 }
 
-/*.tabla{
-	margin-bottom: 10%;
-	.tabla__subtitulos{
-		color: orangered;
-		font-family: 'Bungee Inline', cursive;
-		font-size: xx-large;
-		text-align: center;
-		text-shadow: 5px 5px 5px black;
-		margin-bottom: 50px;	
-	}
-}
-
-.tabla__descripcion{
-	color: black;
-	font-family: 'Times New Roman', Times, serif;
-	font-size: large;
-	text-align: center;
-	margin-bottom: 100px;
-}
-
-table {
-	animation-duration: 4s;
-	animation-name: aparecer;
-	animation-iteration-count: initial;
-}
- @keyframes aparecer {
-	0% {
-	  opacity: 0;
-	}
-	100% {
-	  opacity: 1;
-	}
- }*/
 * {
   margin: 0;
   padding: 0;
@@ -358,55 +347,6 @@ nav ul li {
   margin-bottom: 50px;
   margin-left: 50px;
   margin-right: 50px;
-}
-
-/*
-@media screen and (min-width: 320px) {
-	.PdePag {
-		width: 33%;
-
-	}
-}
-
-@media screen and (min-width: 480px) {
-	.PdePag {
-		width: 33%;
-
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.PdePag {
-		width: 33%;
-
-	}
-}
-*/
-/*$social: (
-    twitter: lightblue,
-    instagram: pink,
-    youtube: red,
-    mail: black,
-);
-
-.instagram {
-    color: map-get($social, instagram);
-};
-.twitter {
-    color: map-get($social, twitter);
-};
-.youtube {
-    color: map-get($social, youtube);
- };
-
-.mail {
-    color: map-get($social, mail);
- }*/
-.carousel-inner {
-  width: 1000px;
-}
-.carousel-inner img {
-  width: 2000px;
 }
 
 /*# sourceMappingURL=style.css.map */
